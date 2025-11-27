@@ -1,0 +1,11 @@
+id,name,gender,address_phone,address_Street,address_Pincode,address_State,address_Country,depts_id
+T001,Alice Johnson,Female,9876543210,12 Green Park Road,560001,Karnataka,India,D001
+T002,Rahul Sharma,Male,9123456780,45 MG Road,110001,Delhi,India,D002
+T003,Emily Carter,Female,9988776655,78 Hill View,400001,Maharashtra,India,D003
+T004,Michael Brown,Male,9090909090,23 Lake Street,500081,Telangana,India,D001
+T005,Sophia Williams,Female,9445566778,88 Sunrise Avenue,600020,Tamil Nadu,India,D004
+T006,Daniel Thompson,Male,8554433221,14 Rose Villa,380015,Gujarat,India,D002
+T007,Priya Nair,Female,9988012345,67 Palm Residency,682001,Kerala,India,D005
+T008,John Miller,Male,9123098765,40 Cedar Street,700001,West Bengal,India,D003
+T009,Ananya Verma,Female,9900123456,22 Blossom Road,226001,Uttar Pradesh,India,D005
+T010,Robert Davis,Male,9001122334,10 Maple Drive,751001,Odisha,India,D004

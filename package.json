@@ -1,0 +1,41 @@
+{
+  "name": "cap-sample",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@cap-js/postgres": "^2.0.6",
+    "@sap/cds": "^9",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true,
+  "cds": {
+    "[development]":{
+      "requires":{
+        "db":{
+          "kind":"sqlite"
+        }
+      }
+    },
+    "[production]":{
+      "requires":{
+        "db": {
+           "kind": "postgres",
+          "credentials": {
+            "host": "postgres-b7dc9929-d886-401d-913a-a380bd5f2576.cqryblsdrbcs.us-east-1.rds.amazonaws.com",
+            "port": 7126,
+            "user": "d7804c72aa6b",
+            "password": "830183efe86e6a14",
+            "database": "jDsvCkDoLUvo"
+          },
+          "deploy": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+applications:
+- name: cap-sample-postgre
+  path: ./gen/pg
+  buildpack: nodejs_buildpack
+  no-route: true
+  task: npm start
+  memory: 512M
+  env:
+    NODE_ENV: production
+  services:
+    - postgre-db

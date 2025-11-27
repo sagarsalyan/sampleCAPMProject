@@ -1,0 +1,8 @@
+##POST Teacher
+PUT  http://localhost:4004/odata/v4/project/Teachers('T001')
+Content-Type: application/json
+
+{
+  "id": "T00101",
+  "name": "Alice Johnsonjkjk"
+}
