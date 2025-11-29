@@ -10,6 +10,12 @@ class MyServiceHandler extends cds.ApplicationService {
     this.before('GET', 'Teachers', async (req) => {
       return await super.run(req.query);
     });
+
+    
+    this.on('getTopProducts', async (req) => {
+      return "Running";
+    });
+
   }
 }
 

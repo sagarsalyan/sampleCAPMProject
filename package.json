@@ -5,27 +5,27 @@
   "dependencies": {
     "@cap-js/postgres": "^2.0.6",
     "@sap/cds": "^9",
-    "express": "^4"
+    "express": "^4",
+    "@sap/xssec": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2"
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9"
   },
   "scripts": {
     "start": "cds-serve"
   },
   "private": true,
   "cds": {
-    "[development]":{
-      "requires":{
-        "db":{
-          "kind":"sqlite"
-        }
-      }
-    },
-    "[production]":{
-      "requires":{
+    "requires": {
+      "[development]": {
         "db": {
-           "kind": "postgres",
+          "kind": "sqlite"
+        }
+      },
+      "[production]": {
+        "db": {
+          "kind": "postgres",
           "credentials": {
             "host": "postgres-b7dc9929-d886-401d-913a-a380bd5f2576.cqryblsdrbcs.us-east-1.rds.amazonaws.com",
             "port": 7126,
@@ -34,7 +34,8 @@
             "database": "jDsvCkDoLUvo"
           },
           "deploy": true
-        }
+        },
+        "auth": "xsuaa"
       }
     }
   }
